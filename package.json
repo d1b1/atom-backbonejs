@@ -1,0 +1,14 @@
+{
+  "name": "backbonejs-snippets",
+  "main": "./lib/backbonejs-snippets",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationEvents": ["backbonejs-snippets:toggle"],
+  "repository": "https://github.com/d1b1/backbonejs-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

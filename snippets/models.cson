@@ -1,0 +1,23 @@
+".source.js":
+  "model.extend":
+    "prefix": "model-extend"
+    "body": """
+      Backbone.Model.extend({
+        ${0:// body...}
+      });
+    """
+  "model.get":
+    "prefix": "model-get"
+    "body": "model.get({})"
+  "model.set":
+    "prefix": "model-set"
+    "body": "model.set(attributes, {})"
+  "model.escape":
+    "prefix": "model-escape"
+    "body": "model.escape({})"
+  "model.has":
+    "prefix": "model-has"
+    "body": "model.has({})"
+  "model.unset":
+    "prefix": "model-unset"
+    "body": "model.unset(attribute, {})"
