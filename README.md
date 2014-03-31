@@ -1,14 +1,22 @@
 # Backbone.js Snippets
 
-Speed up your javascript coding time with Backbone.js snippets.
+Speed up your javascript coding time with Backbone.js snippets. Use
+the following to autocomplete Model, View, Collection and Router
+method and function snippets.
+
+ * `bbm- + tab` - Backbone Model
+ * `bbc- + tab` - Backbone Collection
+ * `bbv- + tab` - Backbone Views
+ * `bbr- + tab` - Backbone Router
+
+ * (Backbone Docs)[http://backbonejs.org]
+ * (Backbone Repo)[https://github.com/jashkenas/backbone]
 
 ## How To Install
 
 ```
 apm install backbonejs-snippets
 ```
-
-## Current Supported Snippets
 
 ### Models
 
@@ -30,6 +38,31 @@ apm install backbonejs-snippets
 
 ```
 [ bbc-extend ] Backbone.Collection.extend({})
+[ bbc-models ] collection.models
+[ bbc-toJSON ] collection.toJSON([options])
+[ bbc-sync ] collection.sync(method, collection, [options])
+[ bbc-add ] collection.add([], [options])
+[ bbc-remove ] collection.remove([], [options])
+[ bbc-reset ] collection.reset(([], [options])
+[ bbc-set ] collection.set([], [options]);
+[ bbc-get ] collection.get(id)
+[ bbc-at ] collection.at(index)
+[ bbc-put ] collection.push(model, [options])
+[ bbc-unshift ] collection.unshift(model, [options])
+[ bbc-shift ] collection.shift([options])
+[ bbc-pop ] collection.pop([options])
+[ bbc-slice ] collection.slice(begin, end)
+[ bbc-length ] collection}.length
+[ bbc-comparator ] collection.comparator = "key"
+[ bbc-sort ] collection.sort([options])
+[ bbc-pluck ] collection.pluck(attribute)
+[ bbc-where ] collection}.where(attribute)
+[ bbc-findwhere ] collection.findWhere(attribute)
+[ bbc-url ] collection.url = ""
+[ bbc-parse ] collection.parse( response, options)
+[ bbc-clone ] collection.clone()
+[ bbc-fetch ] collection.fetch([options])
+[ bbc-create ] collection.create(attributes}, [options])
 ```
 
 ### Views
