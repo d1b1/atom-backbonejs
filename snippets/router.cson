@@ -12,10 +12,10 @@
     """
   "router.route":
     "prefix": "bbr-route"
-    "body": """router.route(${1:[path]}, ${1:[name]}, ${1:[callback]});"""
+    "body": """router.route(${1:[path]}, ${2:[name]}, ${3:[callback]});"""
   "router.navigate":
     "prefix": "bbr-navigate"
-    "body": """router.navigate("${1:[fragment]}", {${1:[options]});"""
+    "body": """router.navigate("${1:[fragment]}", {${2:[options]});"""
   "router.execute":
     "prefix": "bbr-exe"
     "body": """
