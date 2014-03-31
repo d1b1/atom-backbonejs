@@ -1,7 +1,4 @@
-model.get({})
-
-
-model.has({})
-model.get({})
-
-mode-extend 
+collection.add(
+  [ /* models {}, {} */ ],
+  // [options]
+);

@@ -1,0 +1,34 @@
+".source.js":
+
+  "router.extend":
+    "prefix": "router-extend"
+    "body": """
+      var ${1:[name]} = Backbone.Router.extend({
+        routes: {
+          ${2:[name]}: "${2:[name]}", // #home
+          // "home/path1":  "path1",   // #home/path1
+          // "home/path2":  "path2"    // #home/path2
+        }
+      }, ${2:[classProperties])} );
+
+    """
+
+  "router.route":
+    "prefix": "router-route"
+    "body": """
+      router.route(${1:[path]}, ${1:[name]}, ${1:[callback]});
+    """
+
+  "router.navigate":
+    "prefix": "router-navigate"
+    "body": """
+      router.navigate("${1:[fragment]}", { ${1:[options]} });
+    """
+
+  "router.execute":
+    "prefix": "router-execute"
+    "body": """
+      execute: function(callback, args) {
+
+      }
+    """

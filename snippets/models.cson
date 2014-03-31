@@ -1,23 +1,79 @@
 ".source.js":
+
+  "model.snip":
+    "prefix": "model-snip"
+    "body": """
+      "${0:name}":
+        "prefix": "${1:prefix}"
+        "body": "${2:body}"
+  """
+
   "model.extend":
     "prefix": "model-extend"
     "body": """
-      Backbone.Model.extend({
-        ${0:// body...}
-      });
+    var ${1:[Name]} = Backbone.Model.extend({
+
+      initialize: function() {
+        ${2:// Set initial code}
+      },
+
+      defaults: {
+          "${3:Key}": "${4:Value}"
+        }
+
+    });
+  """
+
+  "model.sync":
+    "prefix": "model-sync"
+    "body": """
+      model.sync(
+        ${0:// method},
+        ${1:// model},
+        ${2:// [options]}
+      );
     """
+
+  "model.fetch":
+    "prefix": "model-fetch"
+    "body": """
+      model.fetch(${0://[options]})
+    """
+
+  "model.save":
+    "prefix": "model-save"
+    "body": """
+      model.save([attributes], [options])
+    """
+
+  "model.destroy":
+    "prefix": "model-destroy"
+    "body": """
+      model.destroy([options]);
+    """
+
   "model.get":
     "prefix": "model-get"
-    "body": "model.get({})"
+    "body": "model.get({
+
+   })"
+
   "model.set":
     "prefix": "model-set"
     "body": "model.set(attributes, {})"
+
   "model.escape":
     "prefix": "model-escape"
     "body": "model.escape({})"
+
   "model.has":
     "prefix": "model-has"
     "body": "model.has({})"
+
   "model.unset":
     "prefix": "model-unset"
     "body": "model.unset(attribute, {})"
+
+  "model.clear":
+    "prefix": "model-clear"
+    "body": "model.clear([options])"

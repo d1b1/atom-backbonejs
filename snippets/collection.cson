@@ -1,0 +1,161 @@
+".source.js":
+
+  "collection.extend":
+    "prefix": "collection-extend"
+    "body": """
+    var ${1:[name]} = Backbone.Collection.extend({
+      model: ${2:/* Set initial code */},
+    });
+  """
+
+  "collection.models":
+    "prefix": "collection-models"
+    "body": """
+       ${1:[name]}.models;
+    """
+
+  "collection.toJSON":
+    "prefix": "collection-toJSON"
+    "body": """
+       ${1:[name]}.toJSON( ${2:/* [options] */} );
+    """
+
+  "collection.sync":
+    "prefix": "collection-sync"
+    "body": """
+       collection.sync(${1:method}, ${2:collection}, /* [options] */ );
+    """
+
+  "collection.add":
+    "prefix": "collection-add"
+    "body": """
+       collection.add(${1:[ /* models {}, {} */]}, ${2:/* [options] */});
+    """
+
+  "collection.remove":
+    "prefix": "collection-remove"
+    "body": """
+      collection.remove(${1:[ /* models {}, {} .. */} ], ${2:/* [options] */ });
+    """
+
+  "collection.reset":
+    "prefix": "collection-reset"
+    "body": """
+      collection.reset((${1:[ /* models */]}, ${2:/* [options] */ });
+    """
+
+  "collection.set":
+    "prefix": "collection-set"
+    "body": """
+      collection.set(${1:[ /* models */]}, ${2:/* [options] */ });
+    """
+
+  "collection.get":
+    "prefix": "collection-get"
+    "body": """
+      var ${1:name} = ${1:collection}.get(${2:id});
+    """
+
+  "collection.at":
+    "prefix": "collection-at"
+    "body": """
+      var ${1:name} = ${1:collection}.at( ${2:index} );
+    """
+
+  "collection.put":
+    "prefix": "collection-put"
+    "body": """
+      collection.push(${1:model}, ${2:/* [options] */ });
+    """
+
+  "collection.unshift":
+    "prefix": "collection-unshift"
+    "body": """
+      collection.unshift(${1:model}, ${2:/* [options] */ });
+    """
+
+  "collection.shift":
+    "prefix": "collection-shift"
+    "body": """
+      collection.shift(
+       // [options]
+      );
+    """
+
+  "collection.pop":
+    "prefix": "collection-pop"
+    "body": """
+      collection.pop( /* [options] */ );
+    """
+
+  "collection.slice":
+    "prefix": "collection-slice"
+    "body": """
+      collection.slice(${1:begin}, ${2:end});
+    """
+
+  "collection.length":
+    "prefix": "collection-length"
+    "body": """
+      ${1:collection}.length;
+    """
+
+  "collection.comparator":
+    "prefix": "collection-comparator"
+    "body": """
+      ${1:model}.comparator = "${2:key}";
+    """
+
+  "collection.sort":
+    "prefix": "collection-sort"
+    "body": """
+      ${1:collection}.sort( /* [options] */ );
+    """
+
+  "collection.pluck":
+    "prefix": "collection-pluck"
+    "body": """
+      ${1:collection}.pluck( '${2:attribute}' );
+    """
+
+  "collection.where":
+    "prefix": "collection-where"
+    "body": """
+      ${1:collection}.where( "${2:attribute}" );
+    """
+
+  "collection.findwhere":
+    "prefix": "collection-findwhere"
+    "body": """
+      ${1:collection}.findWhere( "${2:attribute}" );
+    """
+
+  "collection.url":
+    "prefix": "collection-url"
+    "body": """
+      ${1:collection}.url = "${2:url}";
+    """
+
+  "collection.parse":
+    "prefix": "collection-parse"
+    "body": """
+      ${1:collection}.parse( response, options);
+    """
+
+  "collection.clone":
+    "prefix": "collection-clone"
+    "body": """
+      ${1:collection}.clone();
+    """
+
+  "collection.fetch":
+    "prefix": "collection-fetch"
+    "body": """
+      ${1:collection}.fetch( /* [options] */ );
+    """
+
+  "collection.create":
+    "prefix": "collection-create"
+    "body": """
+      ${1:collection}.create( ${2:attributes}, ${3:/* [options] */ });
+    """
