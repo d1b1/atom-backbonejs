@@ -49,3 +49,20 @@
   "model.clear":
     "prefix": "bbm-clear"
     "body": "model.clear(${1:[options]});"
+  "model.parse":
+    "prefix": "bbm-parse"
+    "body": """
+      ${1:model}.parse( response, options);
+    """
+  "model.hasChanged":
+    "prefix": "bbm-haschanged"
+    "body": "model.hasChanged(${1:[attribute]});"
+  "model.previousAttributes":
+    "prefix": "bbm-prev"
+    "body": "model.previousAttributes();"
+  "model.previus":
+    "prefix": "bbm-prev"
+    "body": "model.previous(${1:attribute});"
+  "model.changedAttributes":
+    "prefix": "bbm-prevatt"
+    "body": "model.changedAttributes(${1:[attributes]});"

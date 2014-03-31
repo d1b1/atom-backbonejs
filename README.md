@@ -87,12 +87,6 @@ apm install backbonejs-snippets
 [ bbr-exe ] router.execute = function(callback, args) { ... }
 ```
 
-### Events
-
-```
-Coming soon....
-```
-
 ## License
 
 Copyright (c) 2014 Stephan L. Smith
