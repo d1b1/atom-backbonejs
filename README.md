@@ -9,8 +9,8 @@ method and function snippets.
  * `bbv- + tab` - Backbone Views
  * `bbr- + tab` - Backbone Router
 
- * (Backbone Docs)[http://backbonejs.org]
- * (Backbone Repo)[https://github.com/jashkenas/backbone]
+ * [Backbone Docs](http://backbonejs.org)
+ * [Backbone Repository](https://github.com/jashkenas/backbone)
 
 ## How To Install
 
@@ -69,12 +69,22 @@ apm install backbonejs-snippets
 
 ```
 [ bbv-extend ] Backbone.View.extend({})
+[ bbv-setElement ] view.setElement(element)
 ```
 
 ### Router
 
 ```
 [ bbr-extend ] Backbone.Router.extend({})
+[ bbr-route ] router.route(path, name, [callback])
+[ bbr-navigate ] router.navigate(fragment, [options])
+[ bbr-exe ] router.execute = function(callback, args) { ... }
+```
+
+### Events
+
+```
+Coming soon....
 ```
 
 ## License
