@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Provides Backbone.js Snippets for Atom.",
   "activationEvents": ["backbonejs-snippets:toggle"],
-  "repository": "https://github.com/d1b1/backbonejs-snippets",
+  "repository": "https://github.com/d1b1/atom-backbonejs",
   "license": "MIT",
   "engines": {
     "atom": "*"
