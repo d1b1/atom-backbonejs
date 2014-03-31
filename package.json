@@ -1,7 +1,7 @@
 {
   "name": "backbonejs-snippets",
   "main": "./lib/backbonejs-snippets",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Provides Backbone.js Snippets for Atom.",
   "activationEvents": [
     "backbonejs-snippets:toggle"
