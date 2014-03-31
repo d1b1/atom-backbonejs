@@ -1,34 +1,25 @@
 ".source.js":
-
   "router.extend":
-    "prefix": "router-extend"
+    "prefix": "bbr-extend"
     "body": """
       var ${1:[name]} = Backbone.Router.extend({
         routes: {
-          ${2:[name]}: "${2:[name]}", // #home
+          ${2:name}: "${3:value}",     // #home
           // "home/path1":  "path1",   // #home/path1
           // "home/path2":  "path2"    // #home/path2
         }
-      }, ${2:[classProperties])} );
-
+      }, ${4:classProperties)} );
     """
-
   "router.route":
-    "prefix": "router-route"
-    "body": """
-      router.route(${1:[path]}, ${1:[name]}, ${1:[callback]});
-    """
-
+    "prefix": "bbr-route"
+    "body": """router.route(${1:[path]}, ${1:[name]}, ${1:[callback]});"""
   "router.navigate":
     "prefix": "router-navigate"
-    "body": """
-      router.navigate("${1:[fragment]}", { ${1:[options]} });
-    """
-
+    "body": """router.navigate("${1:[fragment]}", { ${1:[options]} });"""
   "router.execute":
-    "prefix": "router-execute"
+    "prefix": "bbr-exe"
     "body": """
       execute: function(callback, args) {
-
+         ${1:// Code... }
       }
     """

@@ -1,79 +1,51 @@
 ".source.js":
-
-  "model.snip":
-    "prefix": "model-snip"
-    "body": """
-      "${0:name}":
-        "prefix": "${1:prefix}"
-        "body": "${2:body}"
-  """
-
   "model.extend":
-    "prefix": "model-extend"
+    "prefix": "bbm-extend"
     "body": """
     var ${1:[Name]} = Backbone.Model.extend({
-
       initialize: function() {
-        ${2:// Set initial code}
+        ${2:// Set initial code...}
       },
-
       defaults: {
           "${3:Key}": "${4:Value}"
         }
-
     });
   """
-
   "model.sync":
-    "prefix": "model-sync"
+    "prefix": "bbm-sync"
     "body": """
-      model.sync(
-        ${0:// method},
-        ${1:// model},
-        ${2:// [options]}
-      );
+      model.sync(${1:method}, ${2:model}, ${3:[options]});
     """
-
   "model.fetch":
-    "prefix": "model-fetch"
+    "prefix": "bbm-fetch"
     "body": """
-      model.fetch(${0://[options]})
+      model.fetch(${1:[options]});
     """
-
   "model.save":
-    "prefix": "model-save"
+    "prefix": "bbm-save"
     "body": """
-      model.save([attributes], [options])
+      model.save(${1:[attributes]}, ${2:[options]});
     """
-
   "model.destroy":
-    "prefix": "model-destroy"
+    "prefix": "bbm-destroy"
     "body": """
-      model.destroy([options]);
+      model.destroy(${1:[options]});
     """
-
   "model.get":
-    "prefix": "model-get"
-    "body": "model.get({
-
-   })"
-
+    "prefix": "bbm-get"
+    "body": "model.get(${1:key});"
   "model.set":
-    "prefix": "model-set"
-    "body": "model.set(attributes, {})"
-
+    "prefix": "bbm-set"
+    "body": "model.set(${1:attributes}, {$2:[options]});"
   "model.escape":
-    "prefix": "model-escape"
-    "body": "model.escape({})"
-
+    "prefix": "bbm-escape"
+    "body": "model.escape({});"
   "model.has":
-    "prefix": "model-has"
-    "body": "model.has({})"
-
+    "prefix": "bbm-has"
+    "body": "model.has(${1:???});"
   "model.unset":
-    "prefix": "model-unset"
-    "body": "model.unset(attribute, {})"
-
+    "prefix": "bbm-unset"
+    "body": "model.unset(${1:attribute}, ${2:[options]});"
   "model.clear":
-    "prefix": "model-clear"
-    "body": "model.clear([options])"
+    "prefix": "bbm-clear"
+    "body": "model.clear(${1:[options]});"
