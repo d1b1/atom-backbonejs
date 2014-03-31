@@ -14,8 +14,8 @@
     "prefix": "bbr-route"
     "body": """router.route(${1:[path]}, ${1:[name]}, ${1:[callback]});"""
   "router.navigate":
-    "prefix": "router-navigate"
-    "body": """router.navigate("${1:[fragment]}", { ${1:[options]} });"""
+    "prefix": "bbr-navigate"
+    "body": """router.navigate("${1:[fragment]}", {${1:[options]});"""
   "router.execute":
     "prefix": "bbr-exe"
     "body": """
