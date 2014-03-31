@@ -4,11 +4,12 @@ Speed up your javascript coding time with Backbone.js snippets. Use
 the following to autocomplete Model, View, Collection and Router
 method and function snippets.
 
- * `bbm- + tab` - Backbone Model
- * `bbc- + tab` - Backbone Collection
- * `bbv- + tab` - Backbone Views
- * `bbr- + tab` - Backbone Router
+* `bbm- + tab` - Backbone Model
+* `bbc- + tab` - Backbone Collection
+* `bbv- + tab` - Backbone Views
+* `bbr- + tab` - Backbone Router
 
+## Reference
  * [Backbone Docs](http://backbonejs.org)
  * [Backbone Repository](https://github.com/jashkenas/backbone)
 
@@ -18,8 +19,16 @@ method and function snippets.
 apm install backbonejs-snippets
 ```
 
-### Models
+### Backbone
+```
+[ bb. ] Backbone.
+[ .v ] Backbone.View.
+[ .c ] Backbone.Collection.
+[ .r ] Backbone.Router.
+[ .m ] Backbone.Model.
+```
 
+### Models
 ```
 [ bbm-extend ] Backbone.Model.extend({})
 [ bbm_sync ] model.sync(method, model, [options])
@@ -35,7 +44,6 @@ apm install backbonejs-snippets
 ```
 
 ### Collections
-
 ```
 [ bbc-extend ] Backbone.Collection.extend({})
 [ bbc-models ] collection.models
@@ -66,14 +74,12 @@ apm install backbonejs-snippets
 ```
 
 ### Views
-
 ```
 [ bbv-extend ] Backbone.View.extend({})
 [ bbv-setElement ] view.setElement(element)
 ```
 
 ### Router
-
 ```
 [ bbr-extend ] Backbone.Router.extend({})
 [ bbr-route ] router.route(path, name, [callback])
@@ -89,7 +95,7 @@ Coming soon....
 
 ## License
 
-Copyright (c) 2014 Stephan Smith
+Copyright (c) 2014 Stephan L. Smith
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

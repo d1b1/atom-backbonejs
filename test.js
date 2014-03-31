@@ -1,4 +1,0 @@
-collection.add(
-  [ /* models {}, {} */ ],
-  // [options]
-);
